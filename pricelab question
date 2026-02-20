@@ -1,27 +1,23 @@
-
-
-def find_peak(arr):
-    if not arr:
-        return []
+def find(arr):
     
-    result =[]
+    r =[]
     peak = arr[0]
-    peak_index = 0
-    for i in range(1,len(arr)):
-        if arr[i]*arr[i-1]>0:
-            if peak<0 and arr[i]<peak:
-                peak = arr[i]
-                peak_index = i
-            elif peak>=0 and arr[i]>peak:
-                peak=arr[i]
-                peak_index= i
-        else:
-            result.append([peak_index, peak])
-            peak= arr[i]
-            peak_index = i
-    result.append([peak_index, peak])        
-    return result
+    index = 0
     
-arr = [1,4,2,-2,-9,10,2,12,2,-4,-4,-4,-4,2,6,7]
-print(find_peak(arr))    
-                
+    for i in range(1,len(arr)):
+        if arr[i]* arr[i-1]>0:
+            if peak < 0 and arr[i]<peak:
+                peak=arr[i]
+                index = i
+            elif peak>=0 and arr[i]>peak:
+                peak = arr[i]
+                index = i
+        else:
+            r.append([index,peak])
+            peak = arr[i]
+            index = i
+    r.append([index,peak])        
+    return r        
+
+arr =[1,4,2,-2,-9,10,2,12,2,-4,-4,-4,-4,2,6,7]
+print(find(arr))
