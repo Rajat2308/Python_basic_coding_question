@@ -15,8 +15,10 @@ def find(arr):
             r.append([index,peak])
             peak = arr[i]
             index = i
+    # added this line for bug solve
     r.append([index,peak])        
     return r        
 
 arr =[1,4,2,-2,-9,10,2,12,2,-4,-4,-4,-4,2,6,7]
 print(find(arr))
+
