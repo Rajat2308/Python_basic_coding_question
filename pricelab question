@@ -1,5 +1,4 @@
 def find(arr):
-    
     r =[]
     peak = arr[0]
     index = 0
