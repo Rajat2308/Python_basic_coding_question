@@ -27,3 +27,20 @@ for i in list:
         l1.append(i)
 print(l)
 print(l1)
+
+
+
+# Input for list
+a=int(input("Enter a number"))   
+list=[]
+for i in range(0,a):
+    list.append(int(input()))
+l=[]
+l1=[]
+for i in list:
+    if i%2==0:
+        l.append(i)
+    else:
+        l1.append(i)
+print(l)
+print(l1)
