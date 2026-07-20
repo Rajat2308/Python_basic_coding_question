@@ -17,3 +17,13 @@ if(a==d):
     print("true")
 else:
     print("false")
+
+
+s=int(input("Enter a integer")) --Using typecast int to string
+s1 = str(s)
+reverse=s1[::-1]
+if s1==reverse:
+    print("Pallindrome")
+else:
+    print("No")
+ 
