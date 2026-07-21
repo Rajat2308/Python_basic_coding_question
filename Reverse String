@@ -4,7 +4,6 @@ s1 =''
 s1= s1.join(reversed(s))
 print(s1)
 
-
 #slicling ----
 
 s = input()
